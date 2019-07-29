@@ -1,0 +1,215 @@
+
+
+
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="icon" type="image/png" href="../../favicon.png" />
+
+
+    <!-- Material design icon fonts CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- daterange CSS -->
+    <link href="/static/kitchen_brigade/assets/vendor/bootstrap-daterangepicker-master/daterangepicker.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="/static/kitchen_brigade/assets/vendor/bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet">
+
+    <!-- jvector map CSS -->
+    <link href="/static/kitchen_brigade/assets/vendor/jquery-jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet">
+
+    <!-- footable CSS -->
+    <link href="/static/kitchen_brigade/assets/vendor/footable-bootstrap/css/footable.bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom scrollbar CSS -->
+    <link href="/static/kitchen_brigade/assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+    <!-- Customized CSS -->
+    <link href="/static/kitchen_brigade/assets/css/purple.css" id="link" rel="stylesheet">
+
+    <title>Kitchen Brigade</title>
+</head>
+
+<body class="h-100">
+    <div class="loader">
+        <div>
+            <div class="loader-animation">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <br>
+            <h2 class="mt-4"><span class="font-weight-light">KB</span></h2>
+        
+        </div>
+    </div>
+   
+    <div class="wrapper">
+            <div class="sidebar h-100 smalls scroll-y">
+                <a class="navbar-brand d-flex" href="">
+                        <div class="w-auto v-m mr-3">
+                                <h2 class="m-0 font-weight-bold h1">K<span class="font-weight-bold small">B</span></h2>
+                            </div>
+                   
+                    <div class="d-flex flex-column logo-text">
+                        <h5 class="m-0"><span class="text-mute">Kitchen Brigade</span> </h5>
+    
+                        <p class="m-0"><small class="text-mute text-uppercase d-block">Dashboard</small></p>
+                    </div>
+                </a>
+            
+    
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href={% url 'kitchen_brigade:home' %}><i class="material-icons icon">dashboard</i><span class="menu-text">Dashboard</span> </a>
+                      
+                    </li>
+                 
+                  
+                </ul>
+            </div>
+            <div class="content h-100 d-flex flex-column w-100">
+                <header class="header fixed-top">
+                    <!-- Fixed navbar -->
+                    <nav class="container-fluid">
+                        <div class="row">
+                            <div class="col-auto align-self-center">
+                                <div class="row h-100">
+                                    <div class="col-auto">
+                                        <button class="btn btn-sm btn-link menu-btn" type="button">
+                                            <i class="material-icons">menu</i>
+                                        </button>
+                                    </div>
+                                    <div class="col self-align-center">
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col text-center align-self-center px-0 ">
+    
+                            </div>
+                            <div class="col-auto text-right align-self-center">
+                                
+    
+                                <div class="btn-group">
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm btn-link dropdown-toggle no-caret user-profile" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         
+                                            <div class="icons icon-30 p-0 mr-2 vm icon-circle align-self-start bg-info text-white">KB </div>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right w-100" aria-labelledby="dropdownMenuButton4">
+                                            <!-- <a class="dropdown-item" href="profile.html">My Profile</a> -->
+                                          
+                                            <a class="dropdown-item text-danger" href={% url 'logout' %}>Sign Out <i class="material-icons icon-right icon">exit_to_app</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+    
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            
+               
+    
+                {% block content %}
+
+
+                {% endblock content %}
+            
+    
+                <footer class="footer mt-auto">
+                    <div class="container text-center">
+                        <p>Kitchen Brigade</p>
+                    </div>
+                </footer>
+            </div>
+            
+        </div>
+    
+
+
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/static/kitchen_brigade/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/kitchen_brigade/assets/js//popper.min.js"></script>
+    <script src="/static/kitchen_brigade/assets/vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- cookie css -->
+    <script src="/static/kitchen_brigade/assets/vendor/cookie/jquery.cookie.js"></script>
+
+    <!-- custom scrollbar -->
+    <script src="/static/kitchen_brigade/assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Chart Progress -->
+    <script src="/static/kitchen_brigade/assets/vendor/bootstrap-daterangepicker-master/moment.js"></script>
+    <script src="/static/kitchen_brigade/assets/vendor/chartjs/Chart.min.js"></script>
+    <script src="/static/kitchen_brigade/assets/vendor/chartjs/utils.js"></script>
+
+    <!-- Circular Progress -->
+    <script src="/static/kitchen_brigade/assets/vendor/circle-progress/circle-progress.min.js"></script>
+
+    <!-- Sparklines Progress -->
+    <script src="/static/kitchen_brigade/assets/vendor/sparklines/jquery.sparkline.min.js"></script>
+
+    <!-- jVector map jquery file -->
+    <script src="/static/kitchen_brigade/assets/vendor/jquery-jvectormap/jquery-jvectormap.js"></script>
+    <script src="/static/kitchen_brigade/assets/vendor/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="/static/kitchen_brigade/assets/vendor/jquery-jvectormap/jquery-jvectormap-us-aea.js"></script>
+
+    <!-- datepicker jquery file -->
+    <script src="/static/kitchen_brigade/assets/vendor/bootstrap-daterangepicker-master/moment.js"></script>
+    <script src="/static/kitchen_brigade/assets/vendor/bootstrap-daterangepicker-master/daterangepicker.js"></script>
+
+    <!-- Footable jquery file -->
+    <script src="/static/kitchen_brigade/assets/vendor/footable-bootstrap/js/footable.min.js"></script>
+
+    <!-- Template main js -->
+    <script src="/static/kitchen_brigade/assets/js/main.js"></script>
+
+    <!-- color picker and Layout selector main js -->
+    <script src="/static/kitchen_brigade/assets/js/layout-colorpicker.js"></script>
+
+    <!-- dashboard business js -->
+    <!-- <script src="/static/kitchen_brigade/assets/js/business.js"></script> -->
+
+    
+
+    <!-- page specific script -->
+    <script>
+        'user strict'
+        $(document).ready(function() {
+
+        });
+
+
+
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+        utilsScript: "/static/kitchen_brigade/assets/js/util.js" // just for formatting/placeholders etc
+        });
+    </script>
+
+</body>
+
+</html>
